@@ -22,9 +22,7 @@ plot1 <- function(){
     ### Open PNG file
     png(filename = "plot1.png", width = 480, height = 480, units = "px", bg = "white")
     ### Create plot
-    with(data, plot(hist(data[,2])))
-    ### Edit plot
-    plot(h, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+    plot(hist(data[,2]), col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
     title(main="Global Active Power")
     ### Close PNG file
     dev.off()
